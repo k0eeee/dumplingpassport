@@ -1,6 +1,8 @@
 # Dumpling Passport 🥟
 ### A mixed-reality cooking journey through Poland, Lithuania and the Philippines
 
+<img width="1600" height="2240" alt="poster" src="https://github.com/user-attachments/assets/1cfab3a3-dfb4-405d-a6aa-cd48d6faad25" />
+
 **Team:** Patrycja, Saule, Chloe
 **Repository:** [github.com/k0eeee/dumplingpassport](https://github.com/k0eeee/dumplingpassport)
 
