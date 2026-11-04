@@ -67,6 +67,9 @@ Each kitchen follows the same pattern: **show → try → check**. The steps bui
 | **Hand tracking / Touch controllers** | Players can cook with tracked hands or with the controllers |
 | **Godot physics (Jolt or built-in)** | Realistic behaviour for ingredients, pots and utensils |
 | **Git + GitHub** | Version control and collaboration |
+| **Hand Pose Detector** | Recognising hand poses (pinch, fist, flat hand) for kneading, folding and sealing dumplings |
+
+We will start from [Godó Hands](https://github.com/skooter500/hands), which already has hand tracking, the Hand Pose Detector, OpenXR Vendors and XR Tools set up, and use [Quest:SDG](https://github.com/skooter500/questsdg) as a reference for Scene SDK placement, voice-over and 3D UI.
 
 ### Godot systems we plan to use
 
@@ -117,6 +120,22 @@ Each kitchen follows the same pattern: **show → try → check**. The steps bui
 - **Contributing back:** if we fix or improve anything in a starter repo, we will open a pull request for it.
 - **Video:** a public YouTube video showing all features, embedded in this README.
 
+
+## Plan and Milestones
+
+We have about four weeks, so we build one complete kitchen first and get it on the Quest straight away. The other two kitchens reuse the same scenes with different ingredients, steps, guide and window view, so each new kitchen is mostly content rather than new code.
+
+| Week | Milestone |
+|------|-----------|
+| 1    | Starter project (Godó Hands) running on the Quest in passthrough. Cooking station placed on the real table with the Scene SDK. Reusable `Ingredient`, `Dumpling` and `CookingStation` scenes. Pick up ingredients, fold one pierogi with hand gestures, and boil it. |
+| 2    | Recipe step system using signals (each recipe defined as data so kitchens can share it). Guide hints, feedback for mistakes, timers for cooking states, star score and passport stamp. Polish kitchen complete with show → try → check. First test with classmates. |
+| 3    | Lithuanian and Filipino kitchens built from the shared scenes. Passport menu and scene switching. Voice-over and culture cards for all three. Second round of testing, then fixes. |
+| 4    | Juice: tweens, particles, haptics, cooking shader. Challenge mode (hints off). Bug fixing on the Quest, README sections, YouTube video and demo practice. |
+
+**Minimum version (end of week 2):** one full kitchen (Poland) with show → try → check, scoring and a passport stamp, running on the Quest.
+**If time is short:** the second and third kitchens use simpler fold gestures and fewer steps.
+**Stretch goals:** the final table comparing all three dumplings, the ingredient quiz, and speech input for ingredient names.
+
 ---
 
 ## How to Use It
@@ -147,10 +166,14 @@ Each kitchen follows the same pattern: **show → try → check**. The steps bui
 
 ## Team
 
-| Name | Role |
-|------|------|
-| Patrycja | [to be decided] |
-| Saule | [to be decided] |
-| Chloe | [to be decided] |
+[Can be revised/changed.]
+
+| Name     | Main role                                   | Kitchen lead          |
+|----------|---------------------------------------------|-----------------------|
+| Patrycja | Interactions: hand tracking, gestures (Hand Pose Detector), XR Tools pickables and snap zones | 🇵🇱 Poland – Pierogi |
+| Saule    | Game systems: recipe step system, signals, scoring, timers, passport, scene switching | 🇱🇹 Lithuania – Koldūnai |
+| Chloe    | Look and sound: models, shaders, particles, UI, spatial audio, voice-over recording | 🇵🇭 Philippines – Siomai |
+
+Each of us leads the kitchen from our own country: its recipe steps, culture cards, guide character and voice-over in our language. We all work on shared systems through feature branches and pull requests, and aim for an even spread of commits.
 
 *Roles to be decided.*
