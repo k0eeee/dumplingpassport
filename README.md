@@ -15,7 +15,7 @@
 | Country | Dumpling | Kitchen setting |
 |---------|----------|-----------------|
 | 🇵🇱 Poland | **Pierogi** (e.g. ruskie, with potato and cheese) | A cosy family kitchen preparing for Wigilia (Christmas Eve) |
-| 🇱🇹 Lithuania | **Koldūnai** or **Cepelinai** | A rustic countryside kitchen |
+| 🇱🇹 Lithuania | **Cepelinai** | A rustic countryside kitchen |
 | 🇵🇭 Philippines | **Siomai** or **Siopao** | A busy street-food stall |
 
 *(Final dish choices to be confirmed by the team.)*
@@ -171,7 +171,7 @@ We have about four weeks, so we build one complete kitchen first and get it on t
 | Name     | Main role                                   | Kitchen lead          |
 |----------|---------------------------------------------|-----------------------|
 | Patrycja | Interactions: hand tracking, gestures (Hand Pose Detector), XR Tools pickables and snap zones | 🇵🇱 Poland – Pierogi |
-| Saule    | Game systems: recipe step system, signals, scoring, timers, passport, scene switching | 🇱🇹 Lithuania – Koldūnai |
+| Saule    | Game systems: recipe step system, signals, scoring, timers, passport, scene switching | 🇱🇹 Lithuania – Cepelinai |
 | Chloe    | Look and sound: models, shaders, particles, UI, spatial audio, voice-over recording | 🇵🇭 Philippines – Siomai |
 
 Each of us leads the kitchen from our own country: its recipe steps, culture cards, guide character and voice-over in our language. We all work on shared systems through feature branches and pull requests, and aim for an even spread of commits.
