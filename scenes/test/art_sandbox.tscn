@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dfwvc874uexjc"]
 
-[ext_resource type="PackedScene" uid="uid://70qflbflyaev" path="res://assets/models/pierogi_blockout.tscn" id="1_2ujgw"]
+[ext_resource type="PackedScene" uid="uid://70qflbflyaev" path="res://assets/models/pierogi.tscn" id="1_2ujgw"]
 [ext_resource type="PackedScene" uid="uid://cuak8732kd3er" path="res://assets/models/doughball_blockout.tscn" id="2_bykxv"]
 [ext_resource type="PackedScene" uid="uid://b65bxlxcepjxs" path="res://assets/models/pot_blockout.tscn" id="3_pqb3d"]
 

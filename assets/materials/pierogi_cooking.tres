@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bnjs1qbln0wx1"]
+
+[ext_resource type="Shader" uid="uid://xt78nmt2s44n" path="res://assets/shaders/cooking.gdshader" id="1_snyan"]
+
+[resource]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("1_snyan")
+shader_parameter/raw_color = Color(0.984, 0.89, 0.706, 1)
+shader_parameter/cooked_color = Color(0.898, 0.737, 0.455, 1)
+shader_parameter/burnt_color = Color(0.478, 0.29, 0.18, 1)
+shader_parameter/cook_amount = 0.0
