@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://70qflbflyaev"]
+
+[ext_resource type="PackedScene" uid="uid://co56q2u5uhm7" path="res://assets/models/pierogi.glb" id="1_j282u"]
+[ext_resource type="Material" uid="uid://bnjs1qbln0wx1" path="res://assets/materials/pierogi_cooking.tres" id="2_3tnt1"]
+
+[node name="pierogi" type="Node3D" unique_id=319765386]
+
+[node name="pierogi2" parent="." unique_id=1727259533 instance=ExtResource("1_j282u")]
+
+[node name="pierogi" parent="pierogi2" index="0" unique_id=1932011409]
+surface_material_override/0 = ExtResource("2_3tnt1")
+
+[editable path="pierogi2"]
