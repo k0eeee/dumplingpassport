@@ -7,7 +7,7 @@
 
 [node name="pot2" parent="." unique_id=1873772383 instance=ExtResource("1_kxre5")]
 
-[node name="pot" parent="pot2" index="0" unique_id=1219621116]
+[node name="pot" parent="pot2" index="0" unique_id=1455876800]
 surface_material_override/0 = ExtResource("2_rxq8a")
 
 [editable path="pot2"]
