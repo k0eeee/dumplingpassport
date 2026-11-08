@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cuak8732kd3er"]
 
+[ext_resource type="Material" uid="uid://bfackiiero0kn" path="res://assets/materials/dough.tres" id="1_wy68b"]
+
 [sub_resource type="SphereMesh" id="SphereMesh_n0vi3"]
 radius = 0.02
 height = 0.04
@@ -9,3 +11,4 @@ height = 0.04
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2031958670]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02, 0)
 mesh = SubResource("SphereMesh_n0vi3")
+surface_material_override/0 = ExtResource("1_wy68b")
