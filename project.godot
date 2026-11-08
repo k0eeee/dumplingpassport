@@ -36,6 +36,10 @@ settings/addon_root_folder="res://addons/debug_draw_3d"
 
 enabled=PackedStringArray()
 
+[filesystem]
+
+import/blender/enabled=false
+
 [global_group]
 
 finger_tip=""
