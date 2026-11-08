@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dwhcokq8ss0j2"]
+
+[ext_resource type="PackedScene" uid="uid://cpnr5qnka8rsl" path="res://assets/models/rolling_pin.glb" id="1_susr1"]
+[ext_resource type="Material" uid="uid://clfsn0rnsdruq" path="res://assets/materials/wood.tres" id="2_arfxa"]
+
+[node name="rolling_pin" type="Node3D" unique_id=535670879]
+
+[node name="rolling_pin2" parent="." unique_id=2105137193 instance=ExtResource("1_susr1")]
+
+[node name="rolling_pin" parent="rolling_pin2" index="0" unique_id=2042677248]
+surface_material_override/0 = ExtResource("2_arfxa")
+
+[editable path="rolling_pin2"]
