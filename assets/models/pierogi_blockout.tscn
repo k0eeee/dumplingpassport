@@ -11,9 +11,9 @@ is_hemisphere = true
 resource_local_to_scene = true
 render_priority = 0
 shader = ExtResource("1_6jrm4")
-shader_parameter/raw_color = Color(0.96, 0.92, 0.82, 1)
-shader_parameter/cooked_color = Color(0.88, 0.7, 0.4, 1)
-shader_parameter/burnt_color = Color(0.3, 0.2, 0.12, 1)
+shader_parameter/raw_color = Color(0.984, 0.89, 0.706, 1)
+shader_parameter/cooked_color = Color(0.898, 0.737, 0.455, 1)
+shader_parameter/burnt_color = Color(0.478, 0.29, 0.18, 1)
 shader_parameter/cook_amount = 0.0
 
 [node name="pierogi" type="Node3D" unique_id=319765386]
