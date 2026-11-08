@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://cuak8732kd3er"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_n0vi3"]
-radius = 0.2
+radius = 0.02
 height = 0.04
 
 [node name="doughball" type="Node3D" unique_id=1259317800]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2031958670]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26173246, 0.75701, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02, 0)
 mesh = SubResource("SphereMesh_n0vi3")
