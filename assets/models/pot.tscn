@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b65bxlxcepjxs"]
+
+[ext_resource type="PackedScene" uid="uid://6bllgj0ykf5o" path="res://assets/models/pot.glb" id="1_kxre5"]
+[ext_resource type="Material" uid="uid://c7fl1lnrvnu4x" path="res://assets/materials/steel.tres" id="2_rxq8a"]
+
+[node name="pot" type="Node3D" unique_id=719765429]
+
+[node name="pot2" parent="." unique_id=1873772383 instance=ExtResource("1_kxre5")]
+
+[node name="pot" parent="pot2" index="0" unique_id=1219621116]
+surface_material_override/0 = ExtResource("2_rxq8a")
+
+[editable path="pot2"]

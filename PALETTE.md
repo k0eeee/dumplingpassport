@@ -29,6 +29,17 @@ Colours taken from our poster:
 | Sunny Yellow | `#F5C04A` | Yolk, cheese, sparkles, star score |
 | Cheek Blush | `#F59AAA` | Blushing cheeks on food and guide characters |
 
+## Utensils
+| Name | Hex | Use |
+|------|-----|-----|
+| Steel | `#CFC8D3` | Pots, spoons, cutters, ladles (slightly lavender so it fits the palette) |
+| Steel Shadow | `#9A90A0` | Darker metal parts, rims |
+| Wood | `#D9A56B` | Rolling pin, wooden spoon, chopping board |
+| Wood Dark | `#B07A45` | Wood grain, handles |
+
+- **Metal materials:** Metallic 0.2, Roughness 0.4, toon diffuse and specular. 
+- Keep metallic low so it doesn't go dark in passthrough.
+
 ## Countries (stamps, passport pages, kitchen accents)
 | Country | Stamp colour | Light accent |
 |---------|--------------|--------------|
