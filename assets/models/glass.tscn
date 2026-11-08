@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://db4glgali85w2"]
+
+[ext_resource type="PackedScene" uid="uid://debmfi5cdlxjr" path="res://assets/models/glass.glb" id="1_eb28v"]
+[ext_resource type="Material" uid="uid://b1443yqe0tvld" path="res://assets/materials/glass.tres" id="2_wobw6"]
+
+[node name="glass" type="Node3D" unique_id=811572460]
+
+[node name="glass2" parent="." unique_id=853736837 instance=ExtResource("1_eb28v")]
+
+[node name="glass" parent="glass2" index="0" unique_id=1019043166]
+surface_material_override/0 = ExtResource("2_wobw6")
+
+[editable path="glass2"]

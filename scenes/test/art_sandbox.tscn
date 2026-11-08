@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b65bxlxcepjxs" path="res://assets/models/pot.tscn" id="3_pqb3d"]
 [ext_resource type="PackedScene" uid="uid://dwhcokq8ss0j2" path="res://assets/models/rolling_pin.tscn" id="4_bykxv"]
 [ext_resource type="PackedScene" uid="uid://cttj64c6abopq" path="res://assets/models/dough_sheet.tscn" id="5_pqb3d"]
+[ext_resource type="PackedScene" uid="uid://db4glgali85w2" path="res://assets/models/glass.tscn" id="6_jkd06"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_y434a"]
 
@@ -47,3 +48,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0.15)
 
 [node name="dough_sheet" parent="." unique_id=599883196 instance=ExtResource("5_pqb3d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.33, 0.75, 0)
+
+[node name="glass" parent="." unique_id=811572460 instance=ExtResource("6_jkd06")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.33, 0.75, 0.18)
