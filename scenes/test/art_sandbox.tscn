@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://dfwvc874uexjc"]
 
 [ext_resource type="PackedScene" uid="uid://70qflbflyaev" path="res://assets/models/pierogi.tscn" id="1_2ujgw"]
-[ext_resource type="PackedScene" uid="uid://cuak8732kd3er" path="res://assets/models/doughball_blockout.tscn" id="2_bykxv"]
+[ext_resource type="PackedScene" uid="uid://cuak8732kd3er" path="res://assets/models/doughball.tscn" id="2_bykxv"]
 [ext_resource type="PackedScene" uid="uid://b65bxlxcepjxs" path="res://assets/models/pot.tscn" id="3_pqb3d"]
 [ext_resource type="PackedScene" uid="uid://dwhcokq8ss0j2" path="res://assets/models/rolling_pin.tscn" id="4_bykxv"]
+[ext_resource type="PackedScene" uid="uid://cttj64c6abopq" path="res://assets/models/dough_sheet.tscn" id="5_pqb3d"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_y434a"]
 
@@ -43,3 +44,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0.75, 0)
 
 [node name="rolling_pin" parent="." unique_id=535670879 instance=ExtResource("4_bykxv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0.15)
+
+[node name="dough_sheet" parent="." unique_id=599883196 instance=ExtResource("5_pqb3d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.33, 0.75, 0)

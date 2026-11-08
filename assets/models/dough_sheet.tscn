@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cttj64c6abopq"]
+
+[ext_resource type="Material" uid="uid://bfackiiero0kn" path="res://assets/materials/dough.tres" id="1_xrtl7"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_toh0m"]
+top_radius = 0.12
+bottom_radius = 0.12
+height = 0.003
+radial_segments = 48
+
+[node name="dough_sheet" type="Node3D" unique_id=599883196]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1622367784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.002, 0)
+mesh = SubResource("CylinderMesh_toh0m")
+surface_material_override/0 = ExtResource("1_xrtl7")
