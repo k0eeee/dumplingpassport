@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dfwvc874uexjc"]
+
+[ext_resource type="PackedScene" uid="uid://70qflbflyaev" path="res://assets/models/pierogi_blockout.tscn" id="1_2ujgw"]
+[ext_resource type="PackedScene" uid="uid://cuak8732kd3er" path="res://assets/models/doughball_blockout.tscn" id="2_bykxv"]
+[ext_resource type="PackedScene" uid="uid://b65bxlxcepjxs" path="res://assets/models/pot_blockout.tscn" id="3_pqb3d"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_y434a"]
+
+[sub_resource type="Sky" id="Sky_n0vi3"]
+sky_material = SubResource("ProceduralSkyMaterial_y434a")
+
+[sub_resource type="Environment" id="Environment_toh0m"]
+background_mode = 2
+sky = SubResource("Sky_n0vi3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_toh0m"]
+size = Vector3(1, 0.75, 0.6)
+
+[node name="ArtSandbox" type="Node3D" unique_id=1716778543]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=325039943]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2042498878]
+environment = SubResource("Environment_toh0m")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=311421904]
+transform = Transform3D(1, 0, 0, 0, 0.81915206, 0.57357645, 0, -0.57357645, 0.81915206, 0, 1.2, 0.5)
+
+[node name="table" type="MeshInstance3D" parent="." unique_id=1022705235]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.375, 0)
+mesh = SubResource("BoxMesh_toh0m")
+
+[node name="pierogi" parent="." unique_id=319765386 instance=ExtResource("1_2ujgw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.765, 0)
+
+[node name="doughball" parent="." unique_id=1259317800 instance=ExtResource("2_bykxv")]
+
+[node name="pot" parent="." unique_id=719765429 instance=ExtResource("3_pqb3d")]

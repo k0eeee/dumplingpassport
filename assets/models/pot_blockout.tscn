@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b65bxlxcepjxs"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_toh0m"]
+top_radius = 0.2
+bottom_radius = 0.2
+height = 0.15
+
+[node name="pot" type="Node3D" unique_id=719765429]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1768251166]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2645821, 0.8266065, -0.10238159)
+mesh = SubResource("CylinderMesh_toh0m")
