@@ -1,12 +1,24 @@
 [gd_scene format=3 uid="uid://70qflbflyaev"]
 
+[ext_resource type="Shader" uid="uid://xt78nmt2s44n" path="res://assets/shaders/cooking.gdshader" id="1_6jrm4"]
+
 [sub_resource type="SphereMesh" id="SphereMesh_toh0m"]
 radius = 0.035
 height = 0.035
 is_hemisphere = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2ujgw"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("1_6jrm4")
+shader_parameter/raw_color = Color(0.96, 0.92, 0.82, 1)
+shader_parameter/cooked_color = Color(0.88, 0.7, 0.4, 1)
+shader_parameter/burnt_color = Color(0.3, 0.2, 0.12, 1)
+shader_parameter/cook_amount = 0.0
 
 [node name="pierogi" type="Node3D" unique_id=319765386]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1713899062]
 transform = Transform3D(1, 0, 0, 0, 0.8, 0, 0, 0, 0.4, 0, 0, 0)
 mesh = SubResource("SphereMesh_toh0m")
+surface_material_override/0 = SubResource("ShaderMaterial_2ujgw")
