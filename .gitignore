@@ -1,0 +1,8 @@
+.dropbox.attr
+Thumbs.db
+.import/*
+.godot/*
+dev/*
+android/*
+*.apk
+*.zip
