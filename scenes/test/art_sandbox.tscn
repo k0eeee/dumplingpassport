@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://70qflbflyaev" path="res://assets/models/pierogi.tscn" id="1_2ujgw"]
 [ext_resource type="PackedScene" uid="uid://cuak8732kd3er" path="res://assets/models/doughball.tscn" id="2_bykxv"]
+[ext_resource type="PackedScene" uid="uid://6x52c1rlb6iw" path="res://assets/models/burst_pierogi.tscn" id="2_lvhr7"]
 [ext_resource type="PackedScene" uid="uid://b65bxlxcepjxs" path="res://assets/models/pot.tscn" id="3_pqb3d"]
 [ext_resource type="PackedScene" uid="uid://dwhcokq8ss0j2" path="res://assets/models/rolling_pin.tscn" id="4_bykxv"]
 [ext_resource type="PackedScene" uid="uid://cttj64c6abopq" path="res://assets/models/dough_sheet.tscn" id="5_pqb3d"]
@@ -41,6 +42,9 @@ mesh = SubResource("BoxMesh_toh0m")
 
 [node name="pierogi" parent="." unique_id=319765386 instance=ExtResource("1_2ujgw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36519435, 0.75, -0.15800756)
+
+[node name="burst_pierogi" parent="." unique_id=891476597 instance=ExtResource("2_lvhr7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27492872, 0.75, -0.17533307)
 
 [node name="doughball" parent="." unique_id=1259317800 instance=ExtResource("2_bykxv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.37614435, 0.75, -0.07627544)
