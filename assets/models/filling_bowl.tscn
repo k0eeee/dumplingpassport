@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://jtsthdndm4u0"]
+
+[ext_resource type="Material" uid="uid://dk2b88bc0bx8s" path="res://assets/materials/ceramic.tres" id="1_d66u7"]
+[ext_resource type="Material" uid="uid://40sev8itxk3e" path="res://assets/materials/filling_ruskie.tres" id="2_fyk8b"]
+[ext_resource type="PackedScene" uid="uid://dixqkfi2nmrmw" path="res://assets/models/filling_bowl.glb" id="2_w64k0"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_n0vi3"]
+radius = 0.058
+height = 0.058
+is_hemisphere = true
+
+[node name="filling_bowl" type="Node3D" unique_id=328524224]
+
+[node name="filling" type="MeshInstance3D" parent="." unique_id=1518776257]
+transform = Transform3D(1, 0, 0, 0, 0.3, 0, 0, 0, 1, 0, 0.045, 0)
+mesh = SubResource("SphereMesh_n0vi3")
+surface_material_override/0 = ExtResource("2_fyk8b")
+
+[node name="model" parent="." unique_id=2086914182 instance=ExtResource("2_w64k0")]
+
+[node name="filling_bowl" parent="model" index="0" unique_id=135724602]
+surface_material_override/0 = ExtResource("1_d66u7")
+
+[editable path="model"]
