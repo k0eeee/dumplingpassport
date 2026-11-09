@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ce81wmoja3lme"]
+
+[ext_resource type="PackedScene" uid="uid://4pa2aiw4cqx2" path="res://assets/models/plate.glb" id="1_8wvan"]
+[ext_resource type="Material" uid="uid://b1vk04f7u8gqk" path="res://assets/materials/ceramic_rose.tres" id="2_pxf1k"]
+[ext_resource type="Material" uid="uid://bkr7wg1yy02rh" path="res://assets/materials/ceramic_light.tres" id="3_dw8xl"]
+
+[node name="plate" type="Node3D" unique_id=1798118557]
+
+[node name="plate2" parent="." unique_id=2146321142 instance=ExtResource("1_8wvan")]
+
+[node name="plate" parent="plate2" index="0" unique_id=966129308]
+surface_material_override/0 = ExtResource("2_pxf1k")
+surface_material_override/1 = ExtResource("3_dw8xl")
+
+[editable path="plate2"]
