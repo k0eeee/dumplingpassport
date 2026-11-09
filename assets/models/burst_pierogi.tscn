@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://6x52c1rlb6iw"]
+
+[ext_resource type="PackedScene" uid="uid://duev4h7wdqy2y" path="res://assets/models/burst_pierogi.glb" id="1_1xei1"]
+[ext_resource type="Material" uid="uid://bnjs1qbln0wx1" path="res://assets/materials/pierogi_cooking.tres" id="2_nlw3k"]
+[ext_resource type="Material" uid="uid://40sev8itxk3e" path="res://assets/materials/filling_ruskie.tres" id="3_5gcmc"]
+
+[node name="burst_pierogi" type="Node3D" unique_id=891476597]
+
+[node name="burst_pierogi2" parent="." unique_id=90329752 instance=ExtResource("1_1xei1")]
+
+[node name="burst_pierogi" parent="burst_pierogi2" index="0" unique_id=1550727075]
+surface_material_override/0 = ExtResource("2_nlw3k")
+surface_material_override/1 = ExtResource("3_5gcmc")
+
+[editable path="burst_pierogi2"]
