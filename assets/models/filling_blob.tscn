@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b34jt4b5w3uw3"]
+
+[ext_resource type="Material" uid="uid://40sev8itxk3e" path="res://assets/materials/filling_ruskie.tres" id="1_4jgvr"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_toh0m"]
+radius = 0.016
+height = 0.016
+is_hemisphere = true
+
+[node name="filling_blob" type="Node3D" unique_id=1935926106]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=912407344]
+mesh = SubResource("SphereMesh_toh0m")
+surface_material_override/0 = ExtResource("1_4jgvr")

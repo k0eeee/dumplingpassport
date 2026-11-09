@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://dwhcokq8ss0j2" path="res://assets/models/rolling_pin.tscn" id="4_bykxv"]
 [ext_resource type="PackedScene" uid="uid://cttj64c6abopq" path="res://assets/models/dough_sheet.tscn" id="5_pqb3d"]
 [ext_resource type="PackedScene" uid="uid://db4glgali85w2" path="res://assets/models/glass.tscn" id="6_jkd06"]
+[ext_resource type="PackedScene" uid="uid://jtsthdndm4u0" path="res://assets/models/filling_bowl.tscn" id="7_hhjev"]
+[ext_resource type="PackedScene" uid="uid://b34jt4b5w3uw3" path="res://assets/models/filling_blob.tscn" id="8_2fq85"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_y434a"]
 
@@ -51,3 +53,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.33, 0.75, 0)
 
 [node name="glass" parent="." unique_id=811572460 instance=ExtResource("6_jkd06")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.33, 0.75, 0.18)
+
+[node name="filling_bowl" parent="." unique_id=328524224 instance=ExtResource("7_hhjev")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 0.75, -0.18)
+
+[node name="filling_blob" parent="." unique_id=1935926106 instance=ExtResource("8_2fq85")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.33, 0.753, 0)
