@@ -2,6 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://6bllgj0ykf5o" path="res://assets/models/pot.glb" id="1_kxre5"]
 [ext_resource type="Material" uid="uid://c7fl1lnrvnu4x" path="res://assets/materials/steel.tres" id="2_rxq8a"]
+[ext_resource type="Material" uid="uid://c88oj8c5rhgw1" path="res://assets/materials/water.tres" id="3_rknpa"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_toh0m"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 0.002
+radial_segments = 32
 
 [node name="pot" type="Node3D" unique_id=719765429]
 
@@ -9,5 +16,10 @@
 
 [node name="pot" parent="pot2" index="0" unique_id=1455876800]
 surface_material_override/0 = ExtResource("2_rxq8a")
+
+[node name="water" type="MeshInstance3D" parent="." unique_id=932536257]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+mesh = SubResource("CylinderMesh_toh0m")
+surface_material_override/0 = ExtResource("3_rknpa")
 
 [editable path="pot2"]
