@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://db4glgali85w2" path="res://assets/models/glass.tscn" id="6_jkd06"]
 [ext_resource type="PackedScene" uid="uid://jtsthdndm4u0" path="res://assets/models/filling_bowl.tscn" id="7_hhjev"]
 [ext_resource type="PackedScene" uid="uid://b34jt4b5w3uw3" path="res://assets/models/filling_blob.tscn" id="8_2fq85"]
+[ext_resource type="PackedScene" uid="uid://c5e8ibs56fcrx" path="res://assets/models/spoon.tscn" id="9_abgwd"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_y434a"]
 
@@ -59,3 +60,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 0.75, -0.18)
 
 [node name="filling_blob" parent="." unique_id=1935926106 instance=ExtResource("8_2fq85")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.33, 0.753, 0)
+
+[node name="spoon" parent="." unique_id=1917428593 instance=ExtResource("9_abgwd")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.05, 0.75, -0.22)
