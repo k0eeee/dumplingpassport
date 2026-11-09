@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c5e8ibs56fcrx"]
+
+[ext_resource type="PackedScene" uid="uid://c8oy02uprsvo0" path="res://assets/models/spoon.glb" id="1_l8xje"]
+[ext_resource type="Material" uid="uid://c7fl1lnrvnu4x" path="res://assets/materials/steel.tres" id="2_8jpcn"]
+[ext_resource type="PackedScene" uid="uid://b34jt4b5w3uw3" path="res://assets/models/filling_blob.tscn" id="3_8jpcn"]
+
+[node name="spoon" type="Node3D" unique_id=1917428593]
+
+[node name="spoon2" parent="." unique_id=1419292457 instance=ExtResource("1_l8xje")]
+
+[node name="spoon" parent="spoon2" index="0" unique_id=1805833615]
+surface_material_override/0 = ExtResource("2_8jpcn")
+
+[node name="filling" parent="." unique_id=1935926106 instance=ExtResource("3_8jpcn")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.004, 0)
+visible = false
+
+[editable path="spoon2"]
